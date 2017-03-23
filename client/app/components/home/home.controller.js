@@ -10,6 +10,16 @@ class HomeController {
         this.http = $http;
         this.fb = new Storage('content');
         this.saveBtnClick();
+        this.content = [];
+    }
+
+    $onInit(){
+
+      this.fb.getSnapshot().then((content) =>{
+        this.content = content;
+        this.scope.$apply();
+      });
+
     }
 
     getData(fbData) {
