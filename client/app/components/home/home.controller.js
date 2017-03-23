@@ -5,11 +5,9 @@ class HomeController {
     constructor($http, $scope) {
         "ngInject";
         this.name = 'home';
-        this.storyItItem = window.storyItItem;
         this.saveurl = 'http://www.playbuzz.com/playbuzz.game.service/item/save';
         this.http = $http;
         this.fb = new Storage('content');
-        this.saveBtnClick();
         this.scope = $scope;
         this.content = [];
     }
@@ -46,8 +44,17 @@ class HomeController {
 
     saveBtnClick() {
         this.fb.getSnapshot().then(this.getData);
-        this.fbData;
-        this.http.post(this.saveurl, this.storyItItem);//.then(this.successSave, this.errorSaving);
+        // var req = {
+        //     method: 'POST',
+        //     url: 'http://example.com',
+        //     headers: {
+        //         'Content-Type': undefined
+        //     },
+        //     data: { test: 'test' }
+        // }
+        //
+        // $http(req);
+        this.http.post(this.saveurl, {withCredentials:true,data:window.storyItItem,headers:{'Content-Type':'application/json'}});//.then(this.successSave, this.errorSaving);
     }
 }
 
