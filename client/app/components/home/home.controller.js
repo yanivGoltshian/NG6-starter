@@ -9,16 +9,21 @@ class HomeController {
         this.saveurl = 'http://www.playbuzz.com/playbuzz.game.service/item/save';
         this.http = $http;
         this.fb = new Storage('content');
-
-        this.saveBtnClick();
     }
 
     getData(fbData) {
-        let sections = this.storyItItem["sections"];
+        let sections = window.storyItItem["sections"];
 
         for (let key in fbData) {
             let type = fbData[key].type;
+            var src = fbData[key].src;
             if (type === 'text') {
+                window.storyItItem["sections"].forEach(function (arr) {
+                    let section = arr[0];
+                    if (section.type === "paragraphSection") {
+                        section.text.ops[0].insert=src;
+                    }
+                })
             }
         }
     }
