@@ -79,8 +79,8 @@ window.storyItItem = {
         "selected": { "h": 1224, "w": 1499, "x": 374.75, "y": 413.3825, "x2": 1124.25, "y2": 810.6175000000001 }
     },
     "readingTime": 41,
-    "title": "yaniv's story title33333333222",
-    "description": "yaniv's story description",
+    "title": "StoryIt generated title",
+    "description": "StoryIt generated description",
     "detectedLocale": "en-US"
 };
 

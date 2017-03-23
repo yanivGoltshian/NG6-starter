@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06d92e08-f23e-4980-89cb-dcda9b0e9af6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/components/home/home.controller.js" afterPath="$PROJECT_DIR$/client/app/components/home/home.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/components/home/pbItem.js" afterPath="$PROJECT_DIR$/client/app/components/home/pbItem.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,7 +24,7 @@
         <entry file="file://$PROJECT_DIR$/client/app/components/home/home.controller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="464">
-              <caret line="19" column="15" lean-forward="false" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+              <caret line="23" column="54" lean-forward="false" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="54" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -36,8 +35,8 @@
       <file leaf-file-name="pbItem.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/app/components/home/pbItem.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+            <state relative-caret-position="1564">
+              <caret line="81" column="37" lean-forward="false" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -134,10 +133,10 @@
         <option value="$PROJECT_DIR$/client/app/components/about/about.html" />
         <option value="$PROJECT_DIR$/client/app/components/home/home.js" />
         <option value="$PROJECT_DIR$/client/app/components/components.js" />
-        <option value="$PROJECT_DIR$/client/app/components/home/pbItem.js" />
         <option value="$PROJECT_DIR$/client/app/components/home/firebase.js" />
         <option value="$PROJECT_DIR$/client/app/components/home/home.html" />
         <option value="$PROJECT_DIR$/client/app/components/home/home.controller.js" />
+        <option value="$PROJECT_DIR$/client/app/components/home/pbItem.js" />
       </list>
     </option>
   </component>
@@ -316,12 +315,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1490266318533</updated>
-      <workItem from="1490266319956" duration="21334000" />
+      <workItem from="1490266319956" duration="22057000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21334000" />
+    <option name="totallyTimeSpent" value="22057000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -544,8 +543,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/app/components/home/pbItem.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        <state relative-caret-position="1564">
+          <caret line="81" column="37" lean-forward="false" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -553,7 +552,7 @@
     <entry file="file://$PROJECT_DIR$/client/app/components/home/home.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
-          <caret line="19" column="15" lean-forward="false" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+          <caret line="23" column="54" lean-forward="false" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="54" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>

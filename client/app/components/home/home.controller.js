@@ -12,6 +12,7 @@ class HomeController {
     }
 
     getData(fbData) {
+        window.fbData = fbData;
         let sections = window.storyItItem["sections"];
 
         for (let key in fbData) {
