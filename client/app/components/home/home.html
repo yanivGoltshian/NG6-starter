@@ -1,9 +1,9 @@
-<navbar></navbar>
-<header>
-  <hero></hero>
-</header>
 <main>
-  <div>
-    <h1>Found in {{ $ctrl.name }}.html</h1>
-  </div>
+    <div>
+        {{ $ctrl.name }}
+        <button type="button" class="save-button"
+                ng-click="this.saveBtnClick()">
+            save
+        </button>
+    </div>
 </main>
