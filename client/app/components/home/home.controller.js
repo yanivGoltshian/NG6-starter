@@ -44,7 +44,17 @@ class HomeController {
 
     saveBtnClick() {
         this.fb.getSnapshot().then(this.getData);
-        this.http.post(this.saveurl, {withCredentials:true,data:window.storyItItem});//.then(this.successSave, this.errorSaving);
+        // var req = {
+        //     method: 'POST',
+        //     url: 'http://example.com',
+        //     headers: {
+        //         'Content-Type': undefined
+        //     },
+        //     data: { test: 'test' }
+        // }
+        //
+        // $http(req);
+        this.http.post(this.saveurl, {withCredentials:true,data:window.storyItItem,headers:{'Content-Type':'application/json'}});//.then(this.successSave, this.errorSaving);
     }
 }
 
