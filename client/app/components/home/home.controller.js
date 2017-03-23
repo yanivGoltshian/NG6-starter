@@ -2,7 +2,7 @@ import firebase from './firebase';
 import item from './pbItem';
 
 class HomeController {
-    constructor($http) {
+    constructor($http, $scope) {
         "ngInject";
         this.name = 'home';
         this.storyItItem = window.storyItItem;
@@ -10,6 +10,7 @@ class HomeController {
         this.http = $http;
         this.fb = new Storage('content');
         this.saveBtnClick();
+        this.scope = $scope;
         this.content = [];
     }
 
