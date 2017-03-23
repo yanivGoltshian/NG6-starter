@@ -1,9 +1,13 @@
 <main>
-    <div>
-        {{ $ctrl.name }}
-        <button type="button" class="save-button"
-                ng-click="this.saveBtnClick()">
-            save
-        </button>
-    </div>
+
+    <section>
+      <div  class="col-xs-12 col-md-6 col-lg-4" ng-repeat="contentItem in $ctrl.content">
+        <div class="content-item">
+          {{ contentItem.type }}
+        </div>
+      </div>
+    </section>
+
+  <button type="button" class="save-button" ng-click="$ctrl.saveBtnClick()">save</button>
+
 </main>
