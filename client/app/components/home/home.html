@@ -1,13 +1,34 @@
 <main>
 
     <section>
-      <div  class="col-xs-12 col-md-6 col-lg-4" ng-repeat="contentItem in $ctrl.content">
+      <div  ng-repeat="contentItem in $ctrl.content">
         <div class="content-item">
-          {{ contentItem.type }}
+          <div class="item-media" ng-class="contentItem.type">
+
+            <img ng-if="contentItem.type === 'image'"
+                 ng-class="contentItem.type"
+                 class="img-responsive"
+                 ng-src="{{contentItem.src }}">
+
+            <video
+              ng-if="contentItem.type === 'video'"
+              ng-class="contentItem.type"
+              ng-src="{{contentItem.src }}">
+            </video>
+
+            <div
+                ng-class="contentItem.type"
+                ng-if="contentItem.type === 'text'">
+              <div>{{contentItem.src}}</div>
+            </div>
+
+          </div>
+          <div class="item-action-bar"></div>
         </div>
       </div>
     </section>
 
-  <button type="button" class="save-button" ng-click="$ctrl.saveBtnClick()">save</button>
-
+  <div class="content-footer">
+    <button type="button" class="save-button" ng-click="$ctrl.saveBtnClick()">CREATE</button>
+  </div>
 </main>

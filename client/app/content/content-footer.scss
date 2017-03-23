@@ -1,0 +1,23 @@
+.content-footer{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: white;
+  padding: 15px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.03) !important;
+
+  .save-button{
+    display: inline-block;
+    padding: 16px 20px;
+    border-radius: 50em;
+    position: relative;
+    z-index: 2;
+    will-change: transform, filter;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    background: #fa7e29;
+  }
+}

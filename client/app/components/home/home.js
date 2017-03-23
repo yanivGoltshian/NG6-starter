@@ -6,8 +6,9 @@ let homeModule = angular.module('home', [
   uiRouter
 ])
 
-.config(($stateProvider, $urlRouterProvider) => {
+.config(($stateProvider, $urlRouterProvider, $httpProvider) => {
     "ngInject";
+
   $urlRouterProvider.otherwise('/');
   $stateProvider
     .state('home', {

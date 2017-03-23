@@ -2,8 +2,41 @@
 
 .content-item{
   background: white;
-  padding: $padding;
   margin-bottom: $margin;
   border-radius: 4px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.03) !important;
+  overflow: hidden;
+  width: 100%;
 
+  .item-media{
+    padding: $padding;
+
+    &.image > *{
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      overflow: hidden;
+    }
+
+    &.text {
+      width: 100%;
+      background: #bc49ff;
+      font-size: 22px;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+    }
+
+    &.text > *{
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+
+
+  }
+
+  .item-action-bar{
+    padding: $padding;
+    background: #f7f7f7;
+  }
 }
