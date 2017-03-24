@@ -18,18 +18,11 @@
     }
 
     &.text {
-      width: 100%;
-      background: #bc49ff;
-      font-size: 22px;
-      font-weight: bold;
-      color: white;
-      text-align: center;
+      color: #7f868c;
     }
 
     &.text > *{
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
+
     }
 
 
@@ -37,6 +30,11 @@
 
   .item-action-bar{
     padding: $padding;
-    background: #f7f7f7;
+    overflow: hidden;
+
+    .image{
+      width: 30px;
+    }
+
   }
 }

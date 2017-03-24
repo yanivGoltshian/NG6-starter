@@ -10,11 +10,6 @@
                  class="img-responsive"
                  ng-src="{{contentItem.src }}">
 
-            <video
-              ng-if="contentItem.type === 'video'"
-              ng-class="contentItem.type"
-              ng-src="{{contentItem.src }}">
-            </video>
 
             <div
                 ng-class="contentItem.type"
@@ -23,7 +18,18 @@
             </div>
 
           </div>
-          <div class="item-action-bar"></div>
+          <div class="item-action-bar">
+
+            <div class="pull-right image">
+              <img ng-if="contentItem.type === 'text'"
+                   class="img-responsive pull-right"
+                   src="//cdn.playbuzz.com/content/impact/images/particle-icon-paragraph@2x.png">
+              <img ng-if="contentItem.type === 'image'"
+                   class="img-responsive pull-right"
+                   src="//cdn.playbuzz.com/content/impact/images/particle-icon-image@2x.png">
+            </div>
+
+          </div>
         </div>
       </div>
     </section>
