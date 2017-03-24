@@ -22,6 +22,7 @@ class HomeController {
     }
 
     getData(fbData) {
+
         window.fbData = fbData;
         let sections = window.storyItItem["sections"];
 
@@ -51,9 +52,20 @@ class HomeController {
         withCredentials:true
       };
 
+        window.storyItItem["id"]=this.guid();
       this.http(req);
-    }
+        window.storyItItem["sections"]=[];
 
+    }
+    guid() {
+        function s4() {
+            return Math.floor((1 + Math.random()) * 0x10000)
+                .toString(16)
+                .substring(1);
+        }
+        return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+            s4() + '-' + s4() + s4() + s4();
+    }
     saveBtnClick() {
         this.fb.getSnapshot(this.getData.bind(this));
 
