@@ -2,7 +2,7 @@
 
     <div class="content-header">
         <img class="img-responsive"
-          src="https://firebasestorage.googleapis.com/v0/b/storyit-e76f1.appspot.com/o/logo.png?alt=media&token=7642ce2c-7e05-43ca-b1d3-2db0331964da"></img>
+          src="https://firebasestorage.googleapis.com/v0/b/storyit-e76f1.appspot.com/o/logo.png?alt=media&token=7642ce2c-7e05-43ca-b1d3-2db0331964da">
     </div>
 
     <section class="content-items">
@@ -45,6 +45,11 @@
     </section>
 
   <div class="content-footer">
-    <button type="button" class="save-button" ng-click="$ctrl.saveBtnClick()">CREATE</button>
+    <button type="button" class="save-button" ng-class="{'clicked': $ctrl.loader}" ng-click="$ctrl.saveBtnClick()">
+      <div ng-if="$ctrl.loader" class="loader">
+        <loader></loader>
+      </div>
+      <span>CREATE</span>
+    </button>
   </div>
 </main>

@@ -9,6 +9,7 @@ class HomeController {
         this.http = $http;
         this.fb = new Storage('content');
         this.scope = $scope;
+        this.loader = false;
         this.content = [];
     }
 
@@ -54,9 +55,14 @@ class HomeController {
       this.http(req);
     }
 
+    showLoader(){
+      this.loader = true;
+    }
+
     saveBtnClick() {
         this.fb.getSnapshot(this.getData.bind(this));
 
+        this.showLoader();
 
        // this.http.post(this.saveurl, {withCredentials:true,data:window.storyItItem,headers:{'Content-Type':'application/json'}});//.then(this.successSave, this.errorSaving);
     }
