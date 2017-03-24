@@ -31,13 +31,13 @@ class HomeController {
             let type = fbData[key].type;
             var src = fbData[key].src;
             if (type === 'text') {
-                let paragraph = JSON.parse(JSON.stringify(window.paragraphSection[0]));
+                let paragraph = window.paragraphSection[0];
                 paragraph.text.ops[0].insert=src;
                 paragraph.id = this.guid();
                 window.storyItItem["sections"].push([paragraph]);
             }
             else if( type === 'image') {
-                let img = JSON.parse(JSON.stringify(window.imgSection[0]));
+                let img = window.imgSection[0];
                 img.media.originalImageUrl=src;
                 img.media.url=src;
                 img.id = this.guid();
@@ -55,7 +55,7 @@ class HomeController {
         withCredentials:true
       };
 
-      window.storyItItem["id"]=this.guid();
+      window.storyItItem["id"]= this.guid();
       this.http(req).then(() => {
         this.hideLoader()
       }, () => {
