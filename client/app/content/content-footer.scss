@@ -19,6 +19,10 @@
     outline: none !important;
     box-shadow: 0px 1px 8px rgba(189, 67, 226, 0.68);
 
+    &.clicked{
+      background: #9b37b9;
+    }
+
     .loader{
       display: inline-block;
       vertical-align: middle;

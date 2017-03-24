@@ -56,7 +56,11 @@ class HomeController {
       };
 
       window.storyItItem["id"]=this.guid();
-      this.http(req);
+      this.http(req).then(() => {
+        this.hideLoader()
+      }, () => {
+        this.hideLoader()
+      });
       window.storyItItem["sections"]=[];
 
     }
@@ -69,6 +73,10 @@ class HomeController {
     }
     return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
       s4() + '-' + s4() + s4() + s4();
+  }
+
+  hideLoader(){
+     this.loader = false;
   }
 
     showLoader(){
