@@ -1,8 +1,13 @@
 <main>
 
+    <div class="content-header">
+
+    </div>
+
     <section>
       <div  ng-repeat="contentItem in $ctrl.content">
         <div class="content-item">
+          <div class="border"></div>
           <div class="item-media" ng-class="contentItem.type">
 
             <img ng-if="contentItem.type === 'image'"
@@ -19,6 +24,10 @@
 
           </div>
           <div class="item-action-bar">
+
+            <div class="pull-left credits">
+              {{contentItem.pageUrl}}
+            </div>
 
             <div class="pull-right image">
               <img ng-if="contentItem.type === 'text'"
