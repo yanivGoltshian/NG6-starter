@@ -5,7 +5,7 @@ class HomeController {
     constructor($http, $scope) {
         "ngInject";
         this.name = 'home';
-        this.saveurl = 'http://www.playbuzz.com/playbuzz.game.service/item/save';
+        this.saveurl = '/playbuzz.game.service/item/save';
         this.http = $http;
         this.fb = new Storage('content');
         this.scope = $scope;
@@ -29,32 +29,35 @@ class HomeController {
             let type = fbData[key].type;
             var src = fbData[key].src;
             if (type === 'text') {
-                let paragraph = window.paragraphSection;
+                let paragraph = window.paragraphSection[0];
                 paragraph.text.ops[0].insert=src;
-                window.storyItItem["sections"].push(paragraph);
+                window.storyItItem["sections"].push([paragraph]);
             }
             else if( type === 'image') {
                 let img = window.imgSection[0];
                 img.media.originalImageUrl=src;
                 img.media.url=src;
-                window.storyItItem["sections"].push(img);
+                window.storyItItem["sections"].push([img]);
             }
         }
+
+      var req = {
+        method: 'POST',
+        url: '/playbuzz.game.service/item/save',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        data: window.storyItItem,
+        withCredentials:true
+      };
+
+      this.http(req);
     }
 
     saveBtnClick() {
-        this.fb.getSnapshot().then(this.getData);
-        var req = {
-            method: 'POST',
-            url: this.saveurl,
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            data: window.storyItItem,
-            withCredentials:true
-        }
+        this.fb.getSnapshot(this.getData.bind(this));
 
-        this.http(req);
+
        // this.http.post(this.saveurl, {withCredentials:true,data:window.storyItItem,headers:{'Content-Type':'application/json'}});//.then(this.successSave, this.errorSaving);
     }
 }

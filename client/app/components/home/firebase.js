@@ -16,11 +16,12 @@ class Storage{
         this.snapshot = {};
     }
 
-    getSnapshot(){
+    getSnapshot(callback){
         let _this = this;
         const promise = new Promise((resolve, reject) => {
             this.database.ref(this.databaseName).on('value', function(snapshot) {
                 _this.snapshot = snapshot.val();
+                callback && callback(_this.snapshot);
                 resolve(_this.snapshot);
             });
         });
