@@ -23,6 +23,7 @@ class HomeController {
     }
 
     getData(fbData) {
+
         window.fbData = fbData;
         let sections = window.storyItItem["sections"];
 
@@ -32,12 +33,14 @@ class HomeController {
             if (type === 'text') {
                 let paragraph = window.paragraphSection[0];
                 paragraph.text.ops[0].insert=src;
+                paragraph.id = this.guid();
                 window.storyItItem["sections"].push([paragraph]);
             }
             else if( type === 'image') {
                 let img = window.imgSection[0];
                 img.media.originalImageUrl=src;
                 img.media.url=src;
+                img.id = this.guid();
                 window.storyItItem["sections"].push([img]);
             }
         }
@@ -52,8 +55,21 @@ class HomeController {
         withCredentials:true
       };
 
+      window.storyItItem["id"]=this.guid();
       this.http(req);
+      window.storyItItem["sections"]=[];
+
     }
+
+  guid() {
+    function s4() {
+      return Math.floor((1 + Math.random()) * 0x10000)
+        .toString(16)
+        .substring(1);
+    }
+    return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+      s4() + '-' + s4() + s4() + s4();
+  }
 
     showLoader(){
       this.loader = true;
