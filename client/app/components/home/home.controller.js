@@ -32,12 +32,14 @@ class HomeController {
             if (type === 'text') {
                 let paragraph = window.paragraphSection[0];
                 paragraph.text.ops[0].insert=src;
+                paragraph.id = this.guid();
                 window.storyItItem["sections"].push([paragraph]);
             }
             else if( type === 'image') {
                 let img = window.imgSection[0];
                 img.media.originalImageUrl=src;
                 img.media.url=src;
+                img.id = this.guid();
                 window.storyItItem["sections"].push([img]);
             }
         }

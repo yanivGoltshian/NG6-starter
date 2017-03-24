@@ -52,8 +52,8 @@ window.storyItItem = {
     "tags": [],
     "thumbnail": {
         "mediaType": "image",
-        "originalImageUrl": "https://img.playbuzz.com/image/upload/v1489914628/ngplouvsbrwlixxja0ui.jpg",
-        "url": "https://img.playbuzz.com/image/upload/ar_1.8867924528301887,c_crop/ar_420:315,c_crop/c_fill,w_420/v1489914628/ngplouvsbrwlixxja0ui.jpg",
+        "originalImageUrl": "https://firebasestorage.googleapis.com/v0/b/storyit-e76f1.appspot.com/o/logo.png?alt=media&token=7642ce2c-7e05-43ca-b1d3-2db0331964da",
+        "url": "https://firebasestorage.googleapis.com/v0/b/storyit-e76f1.appspot.com/o/logo.png?alt=media&token=7642ce2c-7e05-43ca-b1d3-2db0331964da",
         "width": 1499,
         "height": 794,
         "isAnimated": false,
@@ -61,8 +61,8 @@ window.storyItItem = {
     },
     "socialThumbnail": {
         "mediaType": "image",
-        "originalImageUrl": "https://img.playbuzz.com/image/upload/v1489914628/ngplouvsbrwlixxja0ui.jpg",
-        "url": "https://img.playbuzz.com/image/upload/ar_1.8867924528301887,c_crop/ar_420:221,c_crop/c_fill,w_420/v1489914628/ngplouvsbrwlixxja0ui.jpg",
+        "originalImageUrl": "https://firebasestorage.googleapis.com/v0/b/storyit-e76f1.appspot.com/o/logo.png?alt=media&token=7642ce2c-7e05-43ca-b1d3-2db0331964da",
+        "url": "https://firebasestorage.googleapis.com/v0/b/storyit-e76f1.appspot.com/o/logo.png?alt=media&token=7642ce2c-7e05-43ca-b1d3-2db0331964da",
         "width": 1499,
         "height": 794,
         "isAnimated": false,
