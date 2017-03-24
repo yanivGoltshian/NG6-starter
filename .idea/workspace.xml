@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="06d92e08-f23e-4980-89cb-dcda9b0e9af6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/app.scss" afterPath="$PROJECT_DIR$/client/app/app.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/components/home/home.controller.js" afterPath="$PROJECT_DIR$/client/app/components/home/home.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/components/home/pbItem.js" afterPath="$PROJECT_DIR$/client/app/components/home/pbItem.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,7 +21,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="home.controller.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/app/components/home/home.controller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="58">
@@ -74,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pbItem.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pbItem.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/app/components/home/pbItem.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="55" column="149" lean-forward="false" selection-start-line="55" selection-start-column="149" selection-end-line="55" selection-end-column="149" />
+            <state relative-caret-position="172">
+              <caret line="80" column="91" lean-forward="false" selection-start-line="80" selection-start-column="91" selection-end-line="80" selection-end-column="91" />
               <folding />
             </state>
           </provider>
@@ -153,9 +152,9 @@
         <option value="$PROJECT_DIR$/client/app/components/home/firebase.js" />
         <option value="$PROJECT_DIR$/client/app/components/home/home.html" />
         <option value="$PROJECT_DIR$/dist/index.html" />
-        <option value="$PROJECT_DIR$/client/app/components/home/pbItem.js" />
         <option value="$PROJECT_DIR$/client/app/app.scss" />
         <option value="$PROJECT_DIR$/client/app/components/home/home.controller.js" />
+        <option value="$PROJECT_DIR$/client/app/components/home/pbItem.js" />
       </list>
     </option>
   </component>
@@ -379,15 +378,15 @@
       <workItem from="1490303028500" duration="58000" />
       <workItem from="1490303488892" duration="966000" />
       <workItem from="1490305997164" duration="3112000" />
-      <workItem from="1490328729719" duration="3171000" />
+      <workItem from="1490328729719" duration="3957000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36002000" />
+    <option name="totallyTimeSpent" value="36788000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -752,14 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/components/home/pbItem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="55" column="149" lean-forward="false" selection-start-line="55" selection-start-column="149" selection-end-line="55" selection-end-column="149" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/app/app.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
@@ -775,6 +766,14 @@
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/components/home/pbItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="80" column="91" lean-forward="false" selection-start-line="80" selection-start-column="91" selection-end-line="80" selection-end-column="91" />
+          <folding />
         </state>
       </provider>
     </entry>
